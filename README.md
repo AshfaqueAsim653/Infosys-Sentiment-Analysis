@@ -83,6 +83,8 @@ Employee tenure was categorized as:
 ## 📈 Visualizations
 The analysis includes:
 - Histograms of sentiment distribution
+  <img width="802" height="497" alt="image" src="https://github.com/user-attachments/assets/781d7674-cad6-4d51-8eac-6e37d61c488c" />
+
 - Pie charts for sentiment categories
 - Scatter plots showing rating vs sentiment correlation
 - Role-based satisfaction comparisons
