@@ -10,7 +10,7 @@ This project analyzes employee reviews of Infosys to understand sentiment patter
 - **Key Columns**:
   - `rating`: Employee rating (1-5 scale)
   - `title`: Review title
-  - `location`: Employee tenure information
+  - `location`: Infosys location in India 
   - `role`: Job position
   - `date`: Review date
   - `pros`: Positive aspects mentioned
