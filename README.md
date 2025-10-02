@@ -85,10 +85,21 @@ The analysis includes:
 - Histograms of sentiment distribution
   <img width="802" height="497" alt="image" src="https://github.com/user-attachments/assets/781d7674-cad6-4d51-8eac-6e37d61c488c" />
 
-- Pie charts for sentiment categories
+- Pie charts for Pros sentiment categories
+  <img width="642" height="479" alt="image" src="https://github.com/user-attachments/assets/f71bfd7a-2e44-4818-adc5-81f45a575833" />
+
+- Pie charts for Cons sentiment categories
+  <img width="504" height="464" alt="image" src="https://github.com/user-attachments/assets/769d5d4b-1022-477b-b63c-826df81c611d" />
+
 - Scatter plots showing rating vs sentiment correlation
+  <img width="840" height="514" alt="image" src="https://github.com/user-attachments/assets/2eca687f-edeb-4861-ab62-7fea6f033a02" />
+  
 - Role-based satisfaction comparisons
-- Monthly trend analysis
+  <img width="799" height="588" alt="image" src="https://github.com/user-attachments/assets/fc02d631-9956-4be6-aa8b-908ab594be54" />
+
+- Sentiment Analysis by Tenure
+  <img width="795" height="542" alt="image" src="https://github.com/user-attachments/assets/437dfc44-e46e-4d5e-870d-b303cacd37ff" />
+
 
 ## 💡 Business Insights
 
