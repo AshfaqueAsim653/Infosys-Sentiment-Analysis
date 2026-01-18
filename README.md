@@ -363,10 +363,8 @@ The application includes basic error handling for invalid IDs and duplicate entr
 - Generate employee performance summary reports
 
 - Role-Based Access Control (RBAC):
-
-HR can access Dashboard, Employee Management, Project Management, Performance Management, and Reports
-
-Manager can access Dashboard, Project Management, and Performance Management
+  HR can access Dashboard, Employee Management, Project Management, Performance Management, and Reports
+  Manager can access Dashboard, Project Management, and Performance Management
 
 
 ### Learning Outcomes
