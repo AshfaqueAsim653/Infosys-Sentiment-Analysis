@@ -363,9 +363,7 @@ Generate employee–project assignment reports
 Generate employee performance summary reports
 
 Role-Based Access Control (RBAC):
-
 HR can access Dashboard, Employee Management, Project Management, Performance Management, and Reports
-
 Manager can access Dashboard, Project Management, and Performance Management
 
 
