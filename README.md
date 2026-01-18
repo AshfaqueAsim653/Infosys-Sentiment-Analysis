@@ -352,19 +352,21 @@ The application includes basic error handling for invalid IDs and duplicate entr
 ### Features
 
 
-- Add and manage employee records
+Add and manage employee records
 
-- Create projects and assign employees with defined roles
+Create projects and assign employees with defined roles
 
-- Submit and retrieve performance reviews
+Submit and retrieve performance reviews
 
-- Generate employee–project assignment reports
+Generate employee–project assignment reports
 
-- Generate employee performance summary reports
+Generate employee performance summary reports
 
-- Role-Based Access Control (RBAC):
-  HR can access Dashboard, Employee Management, Project Management, Performance Management, and Reports
-  Manager can access Dashboard, Project Management, and Performance Management
+Role-Based Access Control (RBAC):
+
+HR can access Dashboard, Employee Management, Project Management, Performance Management, and Reports
+
+Manager can access Dashboard, Project Management, and Performance Management
 
 
 ### Learning Outcomes
