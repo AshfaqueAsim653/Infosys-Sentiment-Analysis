@@ -135,3 +135,220 @@ Potential enhancements for deeper analysis:
 ---
 
 *Note: This analysis is based on 300 employee reviews from October 2024 and provides a snapshot of employee sentiment at that time.*
+
+
+
+
+
+
+
+# Employee Performance Tracking System
+
+
+## Project Overview
+The **Employee Performance Tracking System** is a Python-based mini project developed to manage employee records, assign employees to projects, and track employee performance reviews.
+
+
+The project demonstrates the use of **both SQL and NoSQL databases**:
+- **SQLite** is used for structured relational data such as employees, projects, and assignments.
+- **MongoDB** is used for flexible and evolving data such as performance reviews.
+
+The application is implemented as a **menu-driven Command-Line Interface (CLI)**.
+
+---
+
+## Problem Statement
+Organizations require a simple system to:
+- Onboard employees with basic details
+- Assign employees to projects with specific roles
+- Record performance reviews
+- Generate basic employee and project-related reports
+
+This project fulfills these requirements using Python, SQLite, and MongoDB.
+
+---
+
+
+## Technologies Used
+- Python 3
+- SQLite (Relational Database)
+- MongoDB (NoSQL Database)
+- sqlite3
+- PyMongo
+
+---
+
+
+## Project Structure
+
+```
+employee_performance_tracker/
+│
+├── main.py
+├── db_connections.py
+├── employee_manager.py
+├── project_manager.py
+├── performance_reviewer.py
+├── reports.py
+│
+├── tests/
+│   ├── conftest.py
+│   ├── test_employee_manager.py
+│   ├── test_project_manager.py
+│   └── test_performance_reviewer.py
+│
+├── company.db
+├── README.md
+└── requirements.txt
+```
+
+
+
+---
+
+## Database Design
+
+
+### SQLite Database
+Used for structured and relational data.
+
+
+**Tables:**
+
+
+- **Employees**
+  - employee_id (Primary Key)
+  - first_name
+  - last_name
+  - email (Unique)
+  - hire_date
+  - department
+
+- **Projects**
+  - project_id (Primary Key)
+  - project_name
+  - start_date
+  - end_date
+  - status
+
+- **EmployeeProjects**
+  - assignment_id (Primary Key)
+  - employee_id (Foreign Key)
+  - project_id (Foreign Key)
+  - role
+  - assigned_date
+
+
+Foreign key constraints ensure data integrity, and duplicate project assignments are prevented.
+
+---
+
+### MongoDB Database
+Used for semi-structured performance review data.
+
+- **Database:** `performance_reviews_db`
+- **Collection:** `reviews`
+
+Each document stores one performance review and may contain flexible fields such as:
+- employee_id
+- reviewer_name
+- overall_rating
+- strengths
+- areas_for_improvement
+- comments
+- goals_for_next_period
+
+---
+
+## Setup Instructions
+
+
+### Step 1: Create and Activate Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+
+Windows
+
+```
+venv\Scripts\activate
+```
+
+
+macOS / Linux
+
+```
+source venv/bin/activate
+```
+
+
+### Step 2: Install Required Libraries
+
+```
+pip install pymongo
+```
+
+
+### Step 3: MongoDB Configuration
+
+
+Ensure MongoDB is running locally at:
+
+```
+mongodb://localhost:27017/
+```
+
+
+The application automatically connects to:
+- Database: performance_reviews_db
+- Collection: reviews
+
+
+How to Run the Application
+python main.py
+
+
+The required SQLite tables are created automatically on application startup.
+
+
+### How to Use the Application
+
+After running the application, a menu-driven CLI is displayed:
+
+1. Add Employee
+2. Add Project
+3. Assign Employee to Project
+4. Submit Performance Review
+5. View Employee Projects
+6. View Employee Performance
+7. Generate Reports
+8. Exit
+9. Reset All Data
+
+Enter the corresponding number to perform the required operation.
+The application includes basic error handling for invalid IDs and duplicate entries.
+
+
+
+### Features
+
+
+- Add and manage employee records
+- Create projects and assign employees with roles
+- Submit and retrieve performance reviews
+- Generate employee-project assignment reports
+- Generate employee performance summaries
+
+
+### Learning Outcomes
+
+
+- Python modular programming
+- SQL schema design and JOIN queries
+- NoSQL document-based data storage
+- Hybrid database architecture
+- CLI-based application development
+- Basic error handling and validation
+
