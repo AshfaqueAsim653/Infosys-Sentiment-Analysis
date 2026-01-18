@@ -182,24 +182,41 @@ This project fulfills these requirements using Python, SQLite, and MongoDB.
 ## Project Structure
 
 ```
-employee_performance_tracker/
+EMPLOYEE_PERFORMANCE_TRACKER/
 │
-├── main.py
+├── __pycache__/
+├── .pytest_cache/
+│
+├── tests/
+│   ├── __pycache__/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_db_connections.py
+│   ├── test_employee_manager.py
+│   ├── test_performance_reviewer.py
+│   ├── test_project_manager.py
+│   └── test_reports.py
+│
+├── venv/
+│
+├── .coverage
+├── .coveragerc
+├── Active
+├── company.db
+├── test_company.db
+│
 ├── db_connections.py
 ├── employee_manager.py
 ├── project_manager.py
 ├── performance_reviewer.py
 ├── reports.py
+├── logger_config.py
+├── ui.py
+├── main.py
 │
-├── tests/
-│   ├── conftest.py
-│   ├── test_employee_manager.py
-│   ├── test_project_manager.py
-│   └── test_performance_reviewer.py
-│
-├── company.db
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
+
 ```
 
 
@@ -336,10 +353,20 @@ The application includes basic error handling for invalid IDs and duplicate entr
 
 
 - Add and manage employee records
-- Create projects and assign employees with roles
+
+- Create projects and assign employees with defined roles
+
 - Submit and retrieve performance reviews
-- Generate employee-project assignment reports
-- Generate employee performance summaries
+
+- Generate employee–project assignment reports
+
+- Generate employee performance summary reports
+
+- Role-Based Access Control (RBAC):
+
+HR can access Dashboard, Employee Management, Project Management, Performance Management, and Reports
+
+Manager can access Dashboard, Project Management, and Performance Management
 
 
 ### Learning Outcomes
@@ -351,4 +378,6 @@ The application includes basic error handling for invalid IDs and duplicate entr
 - Hybrid database architecture
 - CLI-based application development
 - Basic error handling and validation
+- RBAC Implementation
 
+#HR; dashboard, employee, project, performance and report. Manager: dashboard, project, performance
